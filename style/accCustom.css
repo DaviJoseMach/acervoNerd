@@ -1,0 +1,56 @@
+  
+  
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("../imgs/diariasback.jpg.png");
+    }
+
+    /* card center */
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        height: 450px;
+        background-color: white;
+        box-shadow: 0 0 19px 20px rgba(0, 0, 0, 0.2);
+        margin-top: -225px; /* Metade da altura do card para centralizar verticalmente */
+        margin-left: -250px; /* Metade da largura do card para centralizar horizontalmente */
+        flex-direction: column;
+        border-radius: 15px;
+        transition: transform 0.6s ease-in-out;
+      }
+      
+      .card:hover {
+        transform: scale(1.1);
+      }
+      
+      .card-body {
+        padding: 20px;
+      }
+
+       /* icon astro */
+      .astro{
+        position: relative;
+        padding-bottom: 9px;
+        font-size: 50px; 
+        color: rgb(0, 0, 0);
+      }
+      .set{
+        font-size: 50px;
+        padding-top: 20px;
+        color: black;
+      }
+      .set:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        color: black;
+      }

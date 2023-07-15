@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+  }
+    /* Menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 50px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 40px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .menu ul li.user {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* Exemplo de uso de ícone em um elemento */
+  .icon {
+    color: #2f00ff;
+    width: 100px;
+    font-size: 30px;
+  }
+
+  .ajust{
+    margin-left: 10px;
+    
+  
+  }
+
+   /* Estilos das seções */
+   .section {
+    padding: 20px;
+    margin-left: 100px; /* para acomodar o menu lateral */
+  }
+  
+  /* Estilos específicos de cada seção */
+  /* S1 */
+  .section1 {
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url("../imgs/diariasback.jpg.png");
+    height: 1000px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.0s ease-in-out, transform 0.5s ease-in-out;
+  }
+  .section1.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  #nd{
+    color: #2f00ff;
+    margin-left: 35px;
+  }
+  #listaNoticias li{
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+
+/*  S2 */
+  .section2 {
+    background-color: #2f00ff;
+  }
+  #nd1{
+    color: #f1f1f1;
+    font-family: 'Fjalla One', sans-serif;
+    margin-left: 35px;
+  }
+  #listaNoticiasSemana{
+    color: #f1f1f1;
+    font-family: 'Kanit', sans-serif;
+  }
+  #listaNoticiasSemana li {
+    margin-bottom: 20px;
+  }
+  
+
+/*  S3 */
+  .section3{
+    background-image: url("../imgs/diariasback.jpg.png");
+  }
+#nd3{
+  color: #2f00ff;
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 35px;
+} 
+#listaAlta{
+  font-family: 'Kanit', sans-serif;
+}
+#listaAlta li {
+  margin-bottom: 20px;
+}
+/* S4 */
+.section4{
+  background-color: #2f00ff;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
+  box-shadow: -7px 0px 8px 0 rgb(0, 0, 0);
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+}
+.card:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.card:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-title {
+  font-size: 45px;
+  color: #2f00ff;
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.card-link {
+  color: rgb(76, 0, 255);
+  text-decoration: none;
+  font-weight: bold;
+}

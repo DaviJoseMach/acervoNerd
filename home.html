@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css">
+        <!-- Teste de importação (icone) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Menu</title>
+</head>
+<body>
+    
+
+<div class="menu">
+    <ul>
+      <li><a href="#section1" onclick="scrollToSection(event, 'section1')"> <i class="fa-solid fa-scroll icon"></i> <!-- noticias do dia --></a></li>
+      <li><a href="#section2" onclick="scrollToSection(event, 'section2')"><i class="fa-solid fa-dice icon"></i></a></li> <!-- noticias da semana -->
+      <li><a href="#section3" onclick="scrollToSection(event, 'section3')"><i class="fa-solid fa-hand-fist icon"></i></a></li>
+      <li><a href="#section4" onclick="scrollToSection(event, 'section4')"><i class="fa-solid fa-tag icon"></i></a></li>
+      <li class="user"><a href="acc.html "><i class="fa-solid fa-user icon" style="color: #000000;"></i></i></a></li>
+    </ul>
+  </div>
+
+  <div id="section1" class="section section1">
+    <h1 id="nd">Noticias Diarias</h1>
+    <div id="noticiasDoDia">
+      <ul id="listaNoticias">
+        <li>Notícia 1</li>
+        <li>Notícia 2</li>
+        <li>Notícia 3</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="section2" class="section section2">
+    <h1 id="nd1">Noticias Semanais</h1>
+    <div id="noticiasDaSemana">
+      <ul id="listaNoticiasSemana">
+        <li>Notícia 1</li>
+        <li>Notícia 2</li>
+        <li>Notícia 3</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="section3" class="section section3">
+   <h1 id="nd3">Em alta</h1>
+    <div id="alta">
+      <ul id="listaAlta">
+      </ul>
+    </div>
+  </div>
+
+  <div id="section4" class="section section4">
+<div class="card-container">
+  <div class="card">
+    <h5 class="card-title" >GITHUB •  <i class="fa-brands fa-github fa-flip "></i></h5>
+    <p class="card-text">GITHUB DO DESENVOLVEDOR DA APLICAÇÃO.</p>
+    <a href="https://github.com/LeviAckr" class="card-link">CLIQUE AQUI PARA IR PARA O GIT</a>
+  </div>
+  <div class="card">
+    <h5 class="card-title">V>6.0  • <i class="fa-solid fa-code-compare fa-flip "></i></h5>
+    <p class="card-text">Essa é a versão 6.0 do sistema acervoNerd. <br> {versão mais recente 6.0} {versão com melhor suporte 5.8} </p>
+  </div>
+  <div class="card">
+    <h5 class="card-title">TWITTER •  <i class="fa-brands fa-twitter fa-flip"></i></h5>
+    <p class="card-text">Twitter do desenvolvedor da aplicação <br> siga-o para acompanhar mais novidades.</p>
+    <a href="https://twitter.com/davvzin" class="card-link">CLIQUE AQUI PARA IR PARA O PERFIL</a>
+  </div>
+</div>
+   </div>
+
+  <script src="src/home.js"></script>
+    <!-- Importação de incones -->
+  <script src="https://kit.fontawesome.com/f0c76a2bf3.js" crossorigin="anonymous"></script>
+</body>
+</html>
